@@ -11,6 +11,12 @@
 		1405070C27CE0CE7001E2A31 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1405070B27CE0CE7001E2A31 /* ContentView.swift */; };
 		1405070E27CE0CEE001E2A31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1405070D27CE0CEE001E2A31 /* Assets.xcassets */; };
 		1405071127CE0CEE001E2A31 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1405071027CE0CEE001E2A31 /* Preview Assets.xcassets */; };
+		1405071B27CE0EB5001E2A31 /* product.json in Resources */ = {isa = PBXBuildFile; fileRef = 1405071727CE0EB5001E2A31 /* product.json */; };
+		1405071C27CE0EB5001E2A31 /* category.json in Resources */ = {isa = PBXBuildFile; fileRef = 1405071827CE0EB5001E2A31 /* category.json */; };
+		1405071D27CE0EB5001E2A31 /* brand.json in Resources */ = {isa = PBXBuildFile; fileRef = 1405071927CE0EB5001E2A31 /* brand.json */; };
+		1405071E27CE0EB5001E2A31 /* player.json in Resources */ = {isa = PBXBuildFile; fileRef = 1405071A27CE0EB5001E2A31 /* player.json */; };
+		1405072827CE0FF8001E2A31 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1405072727CE0FF8001E2A31 /* Constant.swift */; };
+		1405072A27CE104B001E2A31 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1405072927CE104B001E2A31 /* FooterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		1405070B27CE0CE7001E2A31 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1405070D27CE0CEE001E2A31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1405071027CE0CEE001E2A31 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1405071727CE0EB5001E2A31 /* product.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = product.json; sourceTree = "<group>"; };
+		1405071827CE0EB5001E2A31 /* category.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = category.json; sourceTree = "<group>"; };
+		1405071927CE0EB5001E2A31 /* brand.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = brand.json; sourceTree = "<group>"; };
+		1405071A27CE0EB5001E2A31 /* player.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = player.json; sourceTree = "<group>"; };
+		1405072727CE0FF8001E2A31 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		1405072927CE104B001E2A31 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,12 @@
 		1405070827CE0CE7001E2A31 /* TouchDown */ = {
 			isa = PBXGroup;
 			children = (
-				1405070927CE0CE7001E2A31 /* TouchDownApp.swift */,
-				1405070B27CE0CE7001E2A31 /* ContentView.swift */,
+				1405072027CE0F17001E2A31 /* App */,
+				1405072127CE0F22001E2A31 /* View */,
+				1405071F27CE0EBF001E2A31 /* Data */,
+				1405072427CE0F42001E2A31 /* Model */,
+				1405072527CE0F49001E2A31 /* Extension */,
+				1405072627CE0F58001E2A31 /* Utility */,
 				1405070D27CE0CEE001E2A31 /* Assets.xcassets */,
 				1405070F27CE0CEE001E2A31 /* Preview Content */,
 			);
@@ -65,6 +81,72 @@
 				1405071027CE0CEE001E2A31 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1405071F27CE0EBF001E2A31 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1405071927CE0EB5001E2A31 /* brand.json */,
+				1405071827CE0EB5001E2A31 /* category.json */,
+				1405071A27CE0EB5001E2A31 /* player.json */,
+				1405071727CE0EB5001E2A31 /* product.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		1405072027CE0F17001E2A31 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1405070927CE0CE7001E2A31 /* TouchDownApp.swift */,
+				1405070B27CE0CE7001E2A31 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1405072127CE0F22001E2A31 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1405072327CE0F39001E2A31 /* Home */,
+				1405072227CE0F2D001E2A31 /* Detail */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1405072227CE0F2D001E2A31 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		1405072327CE0F39001E2A31 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1405072927CE104B001E2A31 /* FooterView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1405072427CE0F42001E2A31 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1405072527CE0F49001E2A31 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		1405072627CE0F58001E2A31 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				1405072727CE0FF8001E2A31 /* Constant.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +207,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1405071E27CE0EB5001E2A31 /* player.json in Resources */,
 				1405071127CE0CEE001E2A31 /* Preview Assets.xcassets in Resources */,
+				1405071D27CE0EB5001E2A31 /* brand.json in Resources */,
 				1405070E27CE0CEE001E2A31 /* Assets.xcassets in Resources */,
+				1405071B27CE0EB5001E2A31 /* product.json in Resources */,
+				1405071C27CE0EB5001E2A31 /* category.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +224,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1405070C27CE0CE7001E2A31 /* ContentView.swift in Sources */,
+				1405072A27CE104B001E2A31 /* FooterView.swift in Sources */,
 				1405070A27CE0CE7001E2A31 /* TouchDownApp.swift in Sources */,
+				1405072827CE0FF8001E2A31 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
